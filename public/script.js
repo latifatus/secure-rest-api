@@ -1,3 +1,5 @@
+const API_BASE_URL = "https://secure-rest-api-latifatus-projects.vercel.app/"; // Ganti dengan domain backend kamu di Vercel
+
 const loginForm = document.getElementById("loginForm");
 
 if (loginForm) {
@@ -8,7 +10,7 @@ if (loginForm) {
     const password = document.getElementById("password").value;
 
     try {
-      const res = await fetch("/login", {
+      const res = await fetch(${API_BASE_URL}/login, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -36,7 +38,7 @@ if (window.location.pathname.endsWith("profile.html")) {
     alert("Kamu harus login dulu!");
     window.location.href = "index.html";
   } else {
-    fetch("/profile", {
+    fetch(${API_BASE_URL}/profile, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -54,7 +56,7 @@ if (window.location.pathname.endsWith("profile.html")) {
 
         const data = await res.json();
         if (data.email) {
-          document.getElementById("userEmail").textContent = `Email: ${data.email}`;
+          document.getElementById("userEmail").textContent = Email: ${data.email};
         }
       })
       .catch(() => {
