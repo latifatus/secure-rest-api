@@ -2,9 +2,9 @@
   "name": "secure-rest-api",
   "version": "1.0.0",
   "description": "A secure REST API built with Express and JWT authentication.",
-  "main": "index.js",
+  "main": "source/index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node source/index.js"
   },
   "keywords": ["express", "jwt", "rest-api", "security"],
   "author": "Aurora Ryn",
