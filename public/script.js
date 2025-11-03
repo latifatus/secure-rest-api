@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://secure-rest-api-latifatus-projects.vercel.app/"; // Ganti dengan domain backend kamu di Vercel
+const API_BASE_URL = "https://secure-rest-api.vercel.app"; // Ganti dengan domain backend kamu di Vercel
 
 const loginForm = document.getElementById("loginForm");
 
